@@ -1,0 +1,72 @@
+{
+  "metadata": {
+    "title": "Will AI Take My Job? Free AI Job Risk Checker",
+    "description": "Use this free AI job risk checker to estimate your AI exposure from your job title, daily tasks, work type, and experience level."
+  },
+  "page": {
+    "title": "Will AI Take My Job? Free AI Job Risk Checker",
+    "show_sections": ["hero", "checker", "interpret", "faq"],
+    "sections": {
+      "hero": {
+        "id": "hero",
+        "title": "Will AI Take My Job? Free AI Job Risk Checker",
+        "description": "Estimate your AI exposure score. See exposed tasks, safer tasks, and a practical career plan. No login or saved input.",
+        "buttons": [
+          {
+            "title": "Start checker",
+            "url": "#checker",
+            "icon": "ArrowDown"
+          }
+        ]
+      },
+      "checker": {
+        "block": "ai-job-risk-checker",
+        "id": "checker",
+        "title": "Check AI risk",
+        "description": "The checker uses task-level rules. It does not call an AI provider or store your answers."
+      },
+      "interpret": {
+        "block": "features",
+        "id": "interpret",
+        "title": "How to interpret your score",
+        "description": "Use the score as a planning signal, not a prediction.",
+        "items": [
+          {
+            "title": "Low",
+            "description": "Your work likely includes physical, care-based, leadership, or accountability-heavy tasks.",
+            "icon": "ShieldCheck"
+          },
+          {
+            "title": "Moderate",
+            "description": "Some tasks can be accelerated by AI, but important human-centered work remains.",
+            "icon": "Gauge"
+          },
+          {
+            "title": "High or very high",
+            "description": "Many daily tasks are digital, repeatable, text-heavy, data-heavy, or rules-based.",
+            "icon": "AlertTriangle"
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "faq": {
+        "id": "faq",
+        "title": "AI Job Risk Checker FAQ",
+        "items": [
+          {
+            "question": "Does this tool use AI?",
+            "answer": "No. The checker uses deterministic rules so the score is fast, transparent, and does not require a provider key."
+          },
+          {
+            "question": "Do you save my input?",
+            "answer": "No. The checker runs in the browser and does not save your job title or selected tasks."
+          },
+          {
+            "question": "What should I do with a high score?",
+            "answer": "Learn to use AI for exposed tasks, then build judgment, communication, domain expertise, and accountability around the work AI cannot own."
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "title": "Jobs AI Will Replace or Change the Most",
+    "description": "See jobs most exposed to AI task automation, why they are exposed, and what safer moves workers can make next."
+  },
+  "page": {
+    "title": "Jobs AI Will Replace or Change the Most",
+    "show_sections": ["resource"],
+    "sections": {
+      "resource": {
+        "block": "ai-resource-page",
+        "id": "jobs-ai-will-replace",
+        "pageKey": "jobsAiWillReplace"
+      }
+    }
+  }
+}

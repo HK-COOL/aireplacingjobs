@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "title": "Will AI Replace Customer Service Representatives? AI Risk Score and Future Outlook",
+    "description": "See the AI exposure score for customer service representatives, exposed support tasks, safer skills, and future career moves."
+  },
+  "page": {
+    "title": "Will AI Replace Customer Service Representatives?",
+    "show_sections": ["profile"],
+    "sections": {
+      "profile": {
+        "block": "ai-job-profile-page",
+        "id": "customer-service-representative",
+        "jobSlug": "customer-service-representative"
+      }
+    }
+  }
+}

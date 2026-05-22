@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "title": "AI Replacing Jobs Statistics 2026",
+    "description": "AI replacing jobs statistics from major labor-market sources, with context on exposure, displacement, automation, and new jobs."
+  },
+  "page": {
+    "title": "AI Replacing Jobs Statistics 2026",
+    "show_sections": ["resource"],
+    "sections": {
+      "resource": {
+        "block": "ai-resource-page",
+        "id": "ai-replacing-jobs-statistics",
+        "pageKey": "statistics"
+      }
+    }
+  }
+}

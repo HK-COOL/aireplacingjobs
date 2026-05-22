@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "title": "Will AI Replace Data Analysts? AI Risk Score and Future Outlook",
+    "description": "See the AI exposure score for data analysts, exposed analysis tasks, safer skills, and future career moves."
+  },
+  "page": {
+    "title": "Will AI Replace Data Analysts?",
+    "show_sections": ["profile"],
+    "sections": {
+      "profile": {
+        "block": "ai-job-profile-page",
+        "id": "data-analyst",
+        "jobSlug": "data-analyst"
+      }
+    }
+  }
+}

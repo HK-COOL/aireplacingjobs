@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "title": "Jobs Safe From AI: Careers Less Likely to Be Replaced",
+    "description": "Explore jobs that are more resilient to AI because they rely on physical presence, trust, care, accountability, or human leadership."
+  },
+  "page": {
+    "title": "Jobs Safe From AI: Careers Less Likely to Be Replaced",
+    "show_sections": ["resource"],
+    "sections": {
+      "resource": {
+        "block": "ai-resource-page",
+        "id": "jobs-safe-from-ai",
+        "pageKey": "jobsSafeFromAi"
+      }
+    }
+  }
+}

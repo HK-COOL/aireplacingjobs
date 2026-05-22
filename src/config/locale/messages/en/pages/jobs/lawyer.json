@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "title": "Will AI Replace Lawyers? AI Risk Score and Future Outlook",
+    "description": "See the AI exposure score for lawyers, exposed legal tasks, safer skills, and future career moves."
+  },
+  "page": {
+    "title": "Will AI Replace Lawyers?",
+    "show_sections": ["profile"],
+    "sections": {
+      "profile": {
+        "block": "ai-job-profile-page",
+        "id": "lawyer",
+        "jobSlug": "lawyer"
+      }
+    }
+  }
+}

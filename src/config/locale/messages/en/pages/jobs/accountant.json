@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "title": "Will AI Replace Accountants? AI Risk Score and Future Outlook",
+    "description": "See the AI exposure score for accountants, exposed accounting tasks, safer skills, and future career moves."
+  },
+  "page": {
+    "title": "Will AI Replace Accountants?",
+    "show_sections": ["profile"],
+    "sections": {
+      "profile": {
+        "block": "ai-job-profile-page",
+        "id": "accountant",
+        "jobSlug": "accountant"
+      }
+    }
+  }
+}

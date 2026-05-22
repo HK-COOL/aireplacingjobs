@@ -1,0 +1,144 @@
+{
+  "header": {
+    "id": "header",
+    "brand": {
+      "title": "AI Replacing Jobs",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "AI Replacing Jobs",
+        "width": 100,
+        "height": 100
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "Checker",
+          "url": "/ai-job-risk-checker/",
+          "icon": "Gauge"
+        },
+        {
+          "title": "Exposed Jobs",
+          "url": "/jobs-ai-will-replace/",
+          "icon": "ListChecks"
+        },
+        {
+          "title": "Safer Jobs",
+          "url": "/jobs-safe-from-ai/",
+          "icon": "ShieldCheck"
+        },
+        {
+          "title": "Statistics",
+          "url": "/ai-replacing-jobs-statistics/",
+          "icon": "BarChart3"
+        }
+      ]
+    },
+    "buttons": [
+      {
+        "title": "Check Risk",
+        "url": "/ai-job-risk-checker/",
+        "icon": "ArrowRight"
+      }
+    ],
+    "show_sign": false,
+    "show_theme": true,
+    "show_locale": false
+  },
+  "footer": {
+    "id": "footer",
+    "brand": {
+      "title": "AI Replacing Jobs",
+      "description": "A practical AI job exposure checker and career-risk resource. Estimates are task-level guidance, not layoff predictions.",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "AI Replacing Jobs",
+        "width": 1024,
+        "height": 1024
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "Tools",
+          "children": [
+            {
+              "title": "AI Job Risk Checker",
+              "url": "/ai-job-risk-checker/"
+            },
+            {
+              "title": "Will AI Take My Job?",
+              "url": "/will-ai-take-my-job/"
+            },
+            {
+              "title": "Statistics",
+              "url": "/ai-replacing-jobs-statistics/"
+            }
+          ]
+        },
+        {
+          "title": "Job Lists",
+          "children": [
+            {
+              "title": "Jobs AI Will Replace",
+              "url": "/jobs-ai-will-replace/"
+            },
+            {
+              "title": "Jobs Safe From AI",
+              "url": "/jobs-safe-from-ai/"
+            },
+            {
+              "title": "Anthropic Forecast",
+              "url": "/anthropic-ai-job-loss-forecast/"
+            }
+          ]
+        },
+        {
+          "title": "Career Profiles",
+          "children": [
+            {
+              "title": "Software Engineer",
+              "url": "/jobs/software-engineer/"
+            },
+            {
+              "title": "Accountant",
+              "url": "/jobs/accountant/"
+            },
+            {
+              "title": "Teacher",
+              "url": "/jobs/teacher/"
+            }
+          ]
+        }
+      ]
+    },
+    "social": {
+      "items": [
+        {
+          "title": "Email",
+          "icon": "Mail",
+          "url": "mailto:support@aireplacingjobs.org",
+          "target": "_self"
+        }
+      ]
+    },
+    "agreement": {
+      "items": [
+        {
+          "title": "Privacy Policy",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "Terms of Service",
+          "url": "/terms-of-service"
+        }
+      ]
+    },
+    "copyright": "© 2026 AI Replacing Jobs. Estimates are informational and not career, legal, or financial advice.",
+    "show_theme": true,
+    "show_locale": false,
+    "show_built_with": false
+  }
+}

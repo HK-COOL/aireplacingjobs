@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "title": "Anthropic AI Job Loss Forecast: What It Means for Your Career",
+    "description": "Understand Anthropic AI job loss forecast searches, labor market exposure, and what task-level AI risk means for your career."
+  },
+  "page": {
+    "title": "Anthropic AI Job Loss Forecast: What It Means for Your Career",
+    "show_sections": ["resource"],
+    "sections": {
+      "resource": {
+        "block": "ai-resource-page",
+        "id": "anthropic-ai-job-loss-forecast",
+        "pageKey": "anthropicForecast"
+      }
+    }
+  }
+}

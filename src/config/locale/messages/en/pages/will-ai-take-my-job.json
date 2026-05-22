@@ -1,0 +1,23 @@
+{
+  "metadata": {
+    "title": "Will AI Take My Job? How to Estimate Your Risk",
+    "description": "Learn the signs your job is exposed to AI, what makes work more protected, and how to check your personal AI exposure."
+  },
+  "page": {
+    "title": "Will AI Take My Job? How to Estimate Your Risk",
+    "show_sections": ["resource", "checker"],
+    "sections": {
+      "resource": {
+        "block": "ai-resource-page",
+        "id": "will-ai-take-my-job",
+        "pageKey": "willAiTakeMyJob"
+      },
+      "checker": {
+        "block": "ai-job-risk-checker",
+        "id": "checker",
+        "title": "Check your own task mix",
+        "description": "A job title is only the starting point. Your daily tasks decide much of your exposure."
+      }
+    }
+  }
+}

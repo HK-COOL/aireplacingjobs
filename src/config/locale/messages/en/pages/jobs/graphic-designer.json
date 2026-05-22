@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "title": "Will AI Replace Graphic Designers? AI Risk Score and Future Outlook",
+    "description": "See the AI exposure score for graphic designers, exposed design tasks, safer skills, and future career moves."
+  },
+  "page": {
+    "title": "Will AI Replace Graphic Designers?",
+    "show_sections": ["profile"],
+    "sections": {
+      "profile": {
+        "block": "ai-job-profile-page",
+        "id": "graphic-designer",
+        "jobSlug": "graphic-designer"
+      }
+    }
+  }
+}

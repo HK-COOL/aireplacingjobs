@@ -1,0 +1,204 @@
+{
+  "metadata": {
+    "title": "AI Replacing Jobs: Check Your Role's Risk",
+    "description": "Is AI replacing jobs? Enter your job title and daily tasks to estimate AI exposure, see exposed tasks, and get a practical career survival plan."
+  },
+  "page": {
+    "title": "AI Replacing Jobs: Check Your Role's Risk",
+    "show_sections": [
+      "hero",
+      "checker",
+      "exposed",
+      "safer",
+      "statistics",
+      "method",
+      "faq",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "id": "hero",
+        "title": "AI Replacing Jobs: Check Your Role's Risk",
+        "highlight_text": "AI Replacing Jobs",
+        "description": "AI is already changing how people write, code, analyze data, answer customers, and manage routine work. Use this free checker to estimate how exposed your own job is and what you can do next.",
+        "tip": "This is not a layoff prediction. It estimates AI exposure from your job title, daily tasks, and work style.",
+        "buttons": [
+          {
+            "title": "Check my job risk",
+            "icon": "Gauge",
+            "url": "/ai-job-risk-checker/",
+            "target": "_self"
+          },
+          {
+            "title": "See exposed jobs",
+            "icon": "ListChecks",
+            "url": "/jobs-ai-will-replace/",
+            "target": "_self",
+            "variant": "outline"
+          }
+        ]
+      },
+      "checker": {
+        "block": "ai-job-risk-checker",
+        "id": "checker",
+        "label": "Free AI job risk checker",
+        "title": "Estimate your AI exposure from real daily tasks",
+        "description": "A job title alone is too shallow. Select what you actually do each week to see a task-level AI exposure estimate."
+      },
+      "exposed": {
+        "block": "features-list",
+        "id": "exposed",
+        "title": "Jobs Most Exposed to AI",
+        "description": "Jobs with repetitive, text-based, data-heavy, or rules-based tasks tend to be more exposed to AI automation.",
+        "buttons": [
+          {
+            "title": "Explore exposed jobs",
+            "url": "/jobs-ai-will-replace/",
+            "icon": "ArrowRight"
+          }
+        ],
+        "items": [
+          {
+            "title": "Customer support",
+            "description": "FAQ responses, routing, and ticket summaries are increasingly handled by AI assistants.",
+            "icon": "MessagesSquare"
+          },
+          {
+            "title": "Routine writing",
+            "description": "Drafting, rewriting, headlines, and first-pass SEO content are exposed to AI generation.",
+            "icon": "PenLine"
+          },
+          {
+            "title": "Data and spreadsheets",
+            "description": "Structured cleanup, formula help, and routine summaries can be accelerated by AI.",
+            "icon": "Table2"
+          },
+          {
+            "title": "Junior digital work",
+            "description": "Entry-level screen work often contains more repeatable production tasks.",
+            "icon": "MonitorCog"
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "safer": {
+        "block": "features",
+        "id": "safer",
+        "title": "Jobs Less Likely to Be Fully Replaced",
+        "description": "Roles are generally more resilient when they depend on physical presence, human trust, care, emergency response, leadership, or accountability.",
+        "items": [
+          {
+            "title": "Hands-on work",
+            "description": "Skilled trades, site diagnosis, and physical repair are less exposed to software-only AI.",
+            "icon": "Wrench"
+          },
+          {
+            "title": "Care and trust",
+            "description": "Healthcare, teaching, and coaching require motivation, empathy, and human relationship.",
+            "icon": "HeartHandshake"
+          },
+          {
+            "title": "Accountability",
+            "description": "Legal, safety, compliance, and leadership decisions need responsible ownership.",
+            "icon": "Scale"
+          }
+        ]
+      },
+      "statistics": {
+        "block": "features-list",
+        "id": "statistics",
+        "title": "AI Replacing Jobs Statistics Need Context",
+        "description": "Reports measure different things: jobs displaced, jobs created, work hours automated, and task-level exposure are not the same metric.",
+        "buttons": [
+          {
+            "title": "Read the statistics guide",
+            "url": "/ai-replacing-jobs-statistics/",
+            "icon": "BarChart3"
+          }
+        ],
+        "items": [
+          {
+            "title": "Exposure is not the same as job loss",
+            "description": "A role can be highly exposed because AI changes tasks, while still needing human judgment.",
+            "icon": "Info"
+          },
+          {
+            "title": "New work can appear too",
+            "description": "Labor-market forecasts include displacement, creation, and transition pressure.",
+            "icon": "RefreshCcw"
+          },
+          {
+            "title": "Your task mix matters",
+            "description": "The same title can look safer or riskier depending on daily responsibilities.",
+            "icon": "SlidersHorizontal"
+          },
+          {
+            "title": "Adaptation lowers risk",
+            "description": "Workers who learn AI workflows can often move toward oversight and higher-value tasks.",
+            "icon": "ShieldCheck"
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "method": {
+        "block": "features-step",
+        "id": "method",
+        "title": "How the AI Exposure Score Works",
+        "description": "The checker uses transparent rules. It does not call an AI provider and does not save your input.",
+        "items": [
+          {
+            "title": "Start with a job baseline",
+            "description": "Known occupations have a conservative baseline score based on task exposure."
+          },
+          {
+            "title": "Add your task mix",
+            "description": "Digital, repeatable, text-heavy, and data-heavy tasks increase exposure."
+          },
+          {
+            "title": "Adjust for work style",
+            "description": "Physical presence, care, leadership, and accountability reduce replacement risk."
+          },
+          {
+            "title": "Turn the score into action",
+          "description": "The result includes exposed tasks, protected tasks, skills to learn, and a 90-day plan."
+          }
+        ]
+      },
+      "faq": {
+        "id": "faq",
+        "title": "Frequently Asked Questions",
+        "items": [
+          {
+            "question": "Is AI really replacing jobs?",
+            "answer": "AI is already changing many tasks, especially writing, coding, customer support, research, and data work. But replacing a task is not the same as replacing an entire job."
+          },
+          {
+            "question": "Is this a job loss prediction?",
+            "answer": "No. This tool estimates AI exposure based on your role and daily tasks. It does not predict layoffs or guarantee that a job will disappear."
+          },
+          {
+            "question": "What jobs are safest from AI?",
+            "answer": "Jobs that require physical presence, in-person trust, care work, emergency response, leadership, or high-stakes accountability are generally less likely to be fully replaced."
+          },
+          {
+            "question": "How is the score calculated?",
+            "answer": "The score combines a job baseline, selected daily tasks, work type, experience level, and AI usage level. The v1 model is deterministic and transparent."
+          }
+        ]
+      },
+      "cta": {
+        "id": "cta",
+        "title": "Check your job before guessing your risk",
+        "description": "A headline about AI jobs is not enough. Your daily tasks are the real signal.",
+        "buttons": [
+          {
+            "title": "Open the AI Job Risk Checker",
+            "url": "/ai-job-risk-checker/",
+            "icon": "Gauge"
+          }
+        ],
+        "className": "bg-muted"
+      }
+    }
+  }
+}

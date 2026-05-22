@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "title": "Will AI Replace Software Engineers? AI Risk Score and Future Outlook",
+    "description": "See the AI exposure score for software engineers, exposed coding tasks, safer skills, and future career moves."
+  },
+  "page": {
+    "title": "Will AI Replace Software Engineers?",
+    "show_sections": ["profile"],
+    "sections": {
+      "profile": {
+        "block": "ai-job-profile-page",
+        "id": "software-engineer",
+        "jobSlug": "software-engineer"
+      }
+    }
+  }
+}

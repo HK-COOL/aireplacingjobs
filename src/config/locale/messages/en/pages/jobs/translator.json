@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "title": "Will AI Replace Translators? AI Risk Score and Future Outlook",
+    "description": "See the AI exposure score for translators, exposed language tasks, safer skills, and future career moves."
+  },
+  "page": {
+    "title": "Will AI Replace Translators?",
+    "show_sections": ["profile"],
+    "sections": {
+      "profile": {
+        "block": "ai-job-profile-page",
+        "id": "translator",
+        "jobSlug": "translator"
+      }
+    }
+  }
+}

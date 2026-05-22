@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "title": "Will AI Replace Copywriters? AI Risk Score and Future Outlook",
+    "description": "See the AI exposure score for copywriters, exposed writing tasks, safer skills, and future career moves."
+  },
+  "page": {
+    "title": "Will AI Replace Copywriters?",
+    "show_sections": ["profile"],
+    "sections": {
+      "profile": {
+        "block": "ai-job-profile-page",
+        "id": "copywriter",
+        "jobSlug": "copywriter"
+      }
+    }
+  }
+}

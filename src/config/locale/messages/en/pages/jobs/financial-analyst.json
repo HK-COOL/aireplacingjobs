@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "title": "Will AI Replace Financial Analysts? AI Risk Score and Future Outlook",
+    "description": "See the AI exposure score for financial analysts, exposed finance tasks, safer skills, and future career moves."
+  },
+  "page": {
+    "title": "Will AI Replace Financial Analysts?",
+    "show_sections": ["profile"],
+    "sections": {
+      "profile": {
+        "block": "ai-job-profile-page",
+        "id": "financial-analyst",
+        "jobSlug": "financial-analyst"
+      }
+    }
+  }
+}

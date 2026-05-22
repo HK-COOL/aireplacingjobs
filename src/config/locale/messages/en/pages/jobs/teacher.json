@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "title": "Will AI Replace Teachers? AI Risk Score and Future Outlook",
+    "description": "See the AI exposure score for teachers, exposed education tasks, safer skills, and future career moves."
+  },
+  "page": {
+    "title": "Will AI Replace Teachers?",
+    "show_sections": ["profile"],
+    "sections": {
+      "profile": {
+        "block": "ai-job-profile-page",
+        "id": "teacher",
+        "jobSlug": "teacher"
+      }
+    }
+  }
+}
