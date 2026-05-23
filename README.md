@@ -91,5 +91,6 @@ Template demo routes and all API routes are blocked or absent in v1.
 - Host: Vercel.
 - DNS: Cloudflare; apex and `www` both resolve to Vercel.
 - IndexNow accepted the 17 public sitemap URLs on 2026-05-23.
-- Google Search Console verification file and meta tag are live, but the final provider-console Verify click still needs a manual browser action.
-- Bing Webmaster still needs Microsoft account sign-in and sitemap submission.
+- Google Search Console verification and sitemap submission were completed manually on 2026-05-23.
+- Bing Webmaster site add/import and sitemap submission were completed manually on 2026-05-23.
+- Search provider crawl, discovery, and indexed URL counts may lag after submission.

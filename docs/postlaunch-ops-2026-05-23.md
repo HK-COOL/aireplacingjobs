@@ -23,11 +23,12 @@ Updated: 2026-05-23
 - IndexNow accepted 17 sitemap URLs on 2026-05-23.
 - Google Search Console URL-prefix verification file has been added to the app and should remain in `public/`.
 - Google Search Console meta verification tag has been added to the document head and should remain in layout.
+- Google Search Console verification and sitemap submission were completed manually on 2026-05-23.
+- Bing Webmaster site add/import and sitemap submission were completed manually on 2026-05-23.
 
-## Still Needs Provider Console Work
+## Still Needs Follow-up
 
-- Google Search Console: click Verify for `https://www.aireplacingjobs.org/` using the already-live HTML file or meta tag, then submit `https://aireplacingjobs.org/sitemap.xml`.
-- Bing Webmaster: sign in with a Microsoft account, add/import the site, and submit or resubmit `https://aireplacingjobs.org/sitemap.xml`.
+- Google Search Console and Bing Webmaster: re-check crawl, discovery, indexed URL counts, and first impressions after provider processing catches up.
 - Vercel Analytics: after manual tool interactions, confirm the first custom events appear.
 
 ## First Growth Hypothesis
