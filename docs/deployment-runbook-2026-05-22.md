@@ -90,4 +90,5 @@ pnpm exec tsx scripts/submit-indexnow.ts
 
 - Submit `https://aireplacingjobs.org/sitemap.xml` to Google Search Console.
 - Submit `https://aireplacingjobs.org/sitemap.xml` to Bing Webmaster.
+- Current status: IndexNow accepted 17 URLs on 2026-05-23.
 - Record provider lag as status, not failure.
