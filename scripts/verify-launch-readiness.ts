@@ -57,11 +57,12 @@ for (const asset of [
   'apple-touch-icon.png',
   'preview.png',
   'aijobs20260523indexnow35a02c0d.txt',
+  'googlec256dbd7e09b37ee.html',
 ]) {
   const file = path.join(root, 'public', asset);
   const stat = fs.statSync(file);
-  if (asset.endsWith('.txt')) {
-    assert(stat.size > 8, `IndexNow key file is missing or too small: ${asset}`);
+  if (asset.endsWith('.txt') || asset.endsWith('.html')) {
+    assert(stat.size > 8, `Verification file is missing or too small: ${asset}`);
   } else {
     assert(stat.size > 1000, `Brand asset is missing or too small: ${asset}`);
   }

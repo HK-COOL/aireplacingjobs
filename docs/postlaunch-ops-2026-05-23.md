@@ -9,6 +9,7 @@ Updated: 2026-05-23
 - Sitemap: `https://aireplacingjobs.org/sitemap.xml`
 - Robots: `https://aireplacingjobs.org/robots.txt`
 - IndexNow key: `https://aireplacingjobs.org/aijobs20260523indexnow35a02c0d.txt`
+- Google verification file: `https://aireplacingjobs.org/googlec256dbd7e09b37ee.html`
 
 ## Completed
 
@@ -19,6 +20,7 @@ Updated: 2026-05-23
 - Tool action events are in the production bundle: `tool_check_risk`, `tool_apply_preset`, and `tool_copy_result`.
 - Long-tail CTA clicks are tracked with `longtail_cta_click`.
 - IndexNow accepted 17 sitemap URLs on 2026-05-23.
+- Google Search Console URL-prefix verification file has been added to the app and should remain in `public/`.
 
 ## Still Needs Provider Console Work
 
