@@ -10,6 +10,7 @@ Updated: 2026-05-23
 - Robots: `https://aireplacingjobs.org/robots.txt`
 - IndexNow key: `https://aireplacingjobs.org/aijobs20260523indexnow35a02c0d.txt`
 - Google verification file: `https://aireplacingjobs.org/googlec256dbd7e09b37ee.html`
+- Google verification meta tag: `google-site-verification`
 
 ## Completed
 
@@ -21,6 +22,7 @@ Updated: 2026-05-23
 - Long-tail CTA clicks are tracked with `longtail_cta_click`.
 - IndexNow accepted 17 sitemap URLs on 2026-05-23.
 - Google Search Console URL-prefix verification file has been added to the app and should remain in `public/`.
+- Google Search Console meta verification tag has been added to the document head and should remain in layout.
 
 ## Still Needs Provider Console Work
 

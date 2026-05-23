@@ -26,6 +26,7 @@ const envExample = read('.env.example');
 const sitemap = read('public/sitemap.xml');
 const robots = read('src/app/robots.ts');
 const packageJson = read('package.json');
+const localeLayout = read('src/app/[locale]/layout.tsx');
 
 assert(
   vercel.buildCommand === 'pnpm exec next build --webpack',
@@ -71,6 +72,11 @@ for (const asset of [
 assert(!exists('public/robots.txt'), 'Do not add public/robots.txt when src/app/robots.ts serves robots');
 assert(!exists('src/app/api'), 'src/app/api should stay removed for public v1 launch');
 assert(exists('scripts/submit-indexnow.ts'), 'IndexNow submission script should exist');
+assert(
+  localeLayout.includes('google-site-verification') &&
+    localeLayout.includes('GwCQJlQAgnuzrXx5RtVknHiD-v4O-rw4J3qtBpdzbf4'),
+  'Google Search Console meta verification tag should stay in the document head'
+);
 assert(!packageJson.toLowerCase().includes('shipany'), 'package.json still has template metadata');
 
 for (const envFile of [envProduction, envExample]) {
