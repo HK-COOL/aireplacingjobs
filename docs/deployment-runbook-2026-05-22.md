@@ -1,15 +1,17 @@
 # AI Replacing Jobs Deployment Runbook
 
-Date: 2026-05-22
+Updated: 2026-05-23
 
 ## Target
 
 - Host: Vercel
 - Domain: `https://aireplacingjobs.org`
+- Primary public URL: `https://www.aireplacingjobs.org`
+- GitHub repo: `https://github.com/HK-COOL/aireplacingjobs`
 - Build command: `pnpm exec next build --webpack`
 - Install command: `pnpm install --frozen-lockfile`
 
-Current note: `aireplacingjobs.org` returned `NXDOMAIN` during local preflight, so the domain must be registered or configured before production cutover.
+Current note: the Vercel project and GitHub repo are connected, and Cloudflare DNS is configured. Vercel reports both custom domains as verified. If a local resolver still returns stale DNS for the apex domain, treat it as propagation lag and verify against public resolvers.
 
 ## Required Vercel Environment Variables
 
@@ -31,6 +33,7 @@ DB_SCHEMA_FILE=./src/config/db/schema.sqlite.ts
 DB_MIGRATIONS_OUT=./src/config/db/migrations_sqlite
 DB_SINGLETON_ENABLED=true
 DB_MAX_CONNECTIONS=1
+VERCEL_ANALYTICS_ENABLED=true
 AUTH_SECRET=<set in Vercel only if auth is enabled later>
 ```
 
@@ -60,13 +63,19 @@ $env:VERCEL='1'; $env:NEXT_TELEMETRY_DISABLED='1'; pnpm exec next build --webpac
 
 ## Production Cutover Checks
 
-- DNS resolves for `aireplacingjobs.org`.
-- `https://aireplacingjobs.org` returns current live HTML.
+- DNS resolves for `www.aireplacingjobs.org`.
+- Cloudflare DNS records:
+  - `www` CNAME -> Vercel DNS target, DNS only.
+  - apex CNAME flattening -> Vercel DNS target, DNS only.
+- `https://www.aireplacingjobs.org` returns current live HTML.
+- `https://aireplacingjobs.org` redirects to the primary public URL after resolver propagation.
 - Canonical URLs use `https://aireplacingjobs.org`.
 - Sitemap URLs use `https://aireplacingjobs.org`.
 - HTTPS is active.
 - Preview image is reachable at `/preview.png`.
 - Favicon is reachable at `/favicon.ico`.
+- Vercel Analytics loads automatically on Vercel unless `VERCEL_ANALYTICS_ENABLED=false`.
+- Core tool events are tracked: `tool_check_risk`, `tool_apply_preset`, and `tool_copy_result`.
 
 ## Indexing
 

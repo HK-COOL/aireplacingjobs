@@ -1,6 +1,7 @@
 'use client';
 
 import { useMemo, useState } from 'react';
+import { track } from '@vercel/analytics';
 import { CheckCircle2, Copy, RotateCcw, ShieldCheck } from 'lucide-react';
 
 import {
@@ -58,6 +59,21 @@ export function AiJobRiskChecker({
     setCopied(false);
   }
 
+  function getEventContext() {
+    return {
+      industry: input.industry,
+      work_type: input.workType,
+      experience_level: input.experienceLevel,
+      ai_usage_level: input.aiUsageLevel,
+      selected_task_count: input.taskIds.length,
+      risk_level: result.riskLevel,
+      score_band: `${Math.floor(result.score / 10) * 10}-${Math.min(
+        Math.floor(result.score / 10) * 10 + 9,
+        100
+      )}`,
+    };
+  }
+
   function toggleTask(taskId: TaskId) {
     setInput((current) => {
       const exists = current.taskIds.includes(taskId);
@@ -84,6 +100,7 @@ export function AiJobRiskChecker({
       document.body.removeChild(textarea);
     }
     setCopied(true);
+    track('tool_copy_result', getEventContext());
   }
 
   function useExample() {
@@ -99,6 +116,10 @@ export function AiJobRiskChecker({
     });
     setSubmitted(true);
     setCopied(false);
+    track('tool_apply_preset', {
+      preset: 'junior_software_developer',
+      source: 'checker',
+    });
   }
 
   function reset() {
@@ -233,7 +254,13 @@ export function AiJobRiskChecker({
             ) : null}
 
             <div className="mt-6 flex flex-wrap gap-3">
-              <Button type="button" onClick={() => setSubmitted(true)}>
+              <Button
+                type="button"
+                onClick={() => {
+                  setSubmitted(true);
+                  track('tool_check_risk', getEventContext());
+                }}
+              >
                 Check My Job Risk
               </Button>
               <Button type="button" variant="outline" onClick={reset}>

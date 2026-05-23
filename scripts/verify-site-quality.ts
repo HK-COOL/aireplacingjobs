@@ -37,6 +37,9 @@ const landing = read('src/config/locale/messages/en/landing.json');
 const home = read('src/config/locale/messages/en/pages/index.json');
 const robots = read('src/app/robots.ts');
 const packageJson = read('package.json');
+const checker = read('src/themes/default/blocks/ai-job-risk-checker.tsx');
+const analyticsService = read('src/shared/services/analytics.ts');
+const envExample = read('.env.example');
 const localePaths = [
   'showcases',
   'blog',
@@ -96,6 +99,26 @@ assert(!landing.includes('ShipAny'), 'Landing navigation still contains ShipAny 
 assert(!home.includes('ShipAny'), 'Homepage still contains ShipAny copy');
 assert(!packageJson.includes('shipany'), 'package.json still contains ShipAny template metadata');
 assert(home.includes('ai-job-risk-checker'), 'Homepage should include the checker block');
+assert(
+  checker.includes("track('tool_check_risk'") &&
+    checker.includes("track('tool_copy_result'") &&
+    checker.includes("track('tool_apply_preset'"),
+  'Checker should track core tool actions for post-launch measurement'
+);
+assert(
+  !checker.includes('jobTitle') || !checker.includes('job_title:'),
+  'Analytics events must not send raw job titles'
+);
+assert(
+  analyticsService.includes('process.env.VERCEL') &&
+    analyticsService.includes('VercelAnalyticsProvider'),
+  'Vercel Analytics should auto-load on Vercel unless disabled'
+);
+assert(
+  envExample.includes('VERCEL_ANALYTICS_ENABLED') &&
+    envExample.includes('GOOGLE_ANALYTICS_ID'),
+  'Env example should document analytics configuration'
+);
 assert(
   !home.includes('Is AI Replacing Jobs? Check Which Careers Are at Risk'),
   'Homepage still contains awkward old page title'

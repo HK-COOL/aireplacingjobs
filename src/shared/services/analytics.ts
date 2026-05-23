@@ -13,6 +13,9 @@ import { Configs, getAllConfigs } from '@/shared/models/config';
  */
 export function getAnalyticsManagerWithConfigs(configs: Configs) {
   const analytics = new AnalyticsManager();
+  const shouldEnableVercelAnalytics =
+    configs.vercel_analytics_enabled === 'true' ||
+    (process.env.VERCEL === '1' && configs.vercel_analytics_enabled !== 'false');
 
   // google analytics
   if (configs.google_analytics_id) {
@@ -48,7 +51,7 @@ export function getAnalyticsManagerWithConfigs(configs: Configs) {
   }
 
   // vercel analytics
-  if (configs.vercel_analytics_enabled === 'true') {
+  if (shouldEnableVercelAnalytics) {
     analytics.addProvider(new VercelAnalyticsProvider({ mode: 'auto' }));
   }
 

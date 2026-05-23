@@ -1,21 +1,23 @@
 # AI Replacing Jobs Launch Preflight
 
-Date: 2026-05-22
+Updated: 2026-05-23
 
 Target domain: `https://aireplacingjobs.org`
 
 ## Current Status
 
-Status: ready for preview deployment with external launch blockers.
+Status: launched with post-launch indexing and measurement follow-up in progress.
 
-The v1 site builds locally through the Vercel-style webpack path, and the local production server returns 200 for all public v1 routes. Template demo, auth, settings, admin, and API routes are blocked from the public v1 surface.
+The v1 site builds locally through the Vercel-style webpack path, the GitHub repo is connected to Vercel, and the custom Cloudflare/Vercel DNS setup is verified by Vercel. Template demo, auth, settings, admin, and API routes are blocked from the public v1 surface.
 
-Final production launch still needs external access: GitHub remote, Vercel project connection, domain DNS/HTTPS, and search console accounts.
+Final public launch now needs provider-console follow-up: Google Search Console, Bing Webmaster, IndexNow, and the first analytics re-check.
 
-Current domain probe:
+Current live surface:
 
-- `aireplacingjobs.org` currently returns `NXDOMAIN` from DNS lookup.
-- `https://aireplacingjobs.org` cannot be verified until the domain exists and DNS is configured.
+- GitHub: `https://github.com/HK-COOL/aireplacingjobs`
+- Vercel production alias: `https://aireplacingjobs.vercel.app/`
+- Primary custom URL: `https://www.aireplacingjobs.org`
+- Apex: `https://aireplacingjobs.org`, configured to redirect to `www` after DNS propagation.
 
 ## Verified Locally
 
@@ -50,6 +52,8 @@ Checked routes:
 - Navigation labels and CTAs were shortened for readability.
 - Canonical URLs and sitemap use the lowercase production domain.
 - `vercel.json` no longer contains stale API function config.
+- Vercel Analytics auto-loads on Vercel unless explicitly disabled.
+- Core tool events are instrumented without sending raw job titles or custom task text.
 
 ## Non-Blocking Caveats
 
@@ -60,16 +64,11 @@ Checked routes:
 
 ## Launch Blockers
 
-No local code blocker remains for a preview deploy.
+No local code blocker remains for launch.
 
-Before final production cutover:
+Remaining SOP tasks:
 
-- Push this workspace to the production GitHub repository.
-- Connect the GitHub repository to Vercel.
-- Register or configure `aireplacingjobs.org`; current DNS lookup returns `NXDOMAIN`.
-- Confirm Vercel build command is `pnpm exec next build --webpack`.
-- Set production `NEXT_PUBLIC_APP_URL` to `https://aireplacingjobs.org`.
-- Add a real `AUTH_SECRET` in Vercel only if auth is enabled later.
-- Configure `aireplacingjobs.org` DNS and HTTPS.
-- Re-check live HTML, robots, sitemap, canonical URLs, favicon, touch icon, and preview image from the custom domain.
-- Submit sitemap to IndexNow, Google Search Console, and Bing Webmaster after deploy.
+- Re-check live HTML, robots, sitemap, canonical URLs, favicon, touch icon, and preview image from the custom domain after the latest deploy.
+- Submit sitemap to IndexNow, Google Search Console, and Bing Webmaster.
+- Confirm Vercel Analytics receives `tool_check_risk`, `tool_apply_preset`, and `tool_copy_result` events.
+- Record the first re-check date and Stage 2 growth hypothesis before adding more pages or monetization.
