@@ -1,7 +1,7 @@
 'use client';
 
-import { Link } from '@/core/i18n/navigation';
 import { SmartIcon } from '@/shared/blocks/common/smart-icon';
+import { TrackedLink } from '@/shared/components/analytics/tracked-link';
 import { Button } from '@/shared/components/ui/button';
 import { ScrollAnimation } from '@/shared/components/ui/scroll-animation';
 import { cn } from '@/shared/lib/utils';
@@ -42,13 +42,18 @@ export function Cta({
                   variant={button.variant || 'default'}
                   key={idx}
                 >
-                  <Link
+                  <TrackedLink
                     href={button.url || ''}
                     target={button.target || '_self'}
+                    eventContext={{
+                      source: section.id || 'cta',
+                      label: button.title || '',
+                      destination: button.url || '',
+                    }}
                   >
                     {button.icon && <SmartIcon name={button.icon as string} />}
                     <span>{button.title}</span>
-                  </Link>
+                  </TrackedLink>
                 </Button>
               ))}
             </div>

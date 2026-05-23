@@ -3,6 +3,7 @@ import { ArrowRight } from 'lucide-react';
 
 import { Link } from '@/core/i18n/navigation';
 import { SmartIcon } from '@/shared/blocks/common';
+import { TrackedLink } from '@/shared/components/analytics/tracked-link';
 import { Button } from '@/shared/components/ui/button';
 import { Highlighter } from '@/shared/components/ui/highlighter';
 import { cn } from '@/shared/lib/utils';
@@ -86,12 +87,20 @@ export function Hero({
                 className="max-w-full px-4 text-sm"
                 key={idx}
               >
-                <Link href={button.url ?? ''} target={button.target ?? '_self'}>
+                <TrackedLink
+                  href={button.url ?? ''}
+                  target={button.target ?? '_self'}
+                  eventContext={{
+                    source: 'hero',
+                    label: button.title ?? '',
+                    destination: button.url ?? '',
+                  }}
+                >
                   {button.icon && <SmartIcon name={button.icon as string} />}
                   <span className="min-w-0 whitespace-normal text-center leading-5">
                     {button.title}
                   </span>
-                </Link>
+                </TrackedLink>
               </Button>
             ))}
           </div>

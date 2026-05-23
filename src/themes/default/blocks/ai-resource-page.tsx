@@ -1,7 +1,7 @@
 import { ArrowRight, ExternalLink } from 'lucide-react';
 
-import { Link } from '@/core/i18n/navigation';
 import { resourcePages } from '@/shared/lib/ai-site-content';
+import { TrackedLink } from '@/shared/components/analytics/tracked-link';
 import { Button } from '@/shared/components/ui/button';
 import type { Section } from '@/shared/types/blocks/landing';
 
@@ -46,13 +46,29 @@ export function AiResourcePage({ section }: { section: Section }) {
             </ul>
             <div className="mt-6 flex flex-wrap gap-3">
               <Button asChild>
-                <Link href="/ai-job-risk-checker/">
+                <TrackedLink
+                  href="/ai-job-risk-checker/"
+                  eventContext={{
+                    source: section.pageKey as string,
+                    label: 'Check my job risk',
+                    destination: '/ai-job-risk-checker/',
+                  }}
+                >
                   Check my job risk
                   <ArrowRight className="size-4" />
-                </Link>
+                </TrackedLink>
               </Button>
               <Button asChild variant="outline">
-                <Link href="/jobs-safe-from-ai/">See safer jobs</Link>
+                <TrackedLink
+                  href="/jobs-safe-from-ai/"
+                  eventContext={{
+                    source: section.pageKey as string,
+                    label: 'See safer jobs',
+                    destination: '/jobs-safe-from-ai/',
+                  }}
+                >
+                  See safer jobs
+                </TrackedLink>
               </Button>
             </div>
           </div>
@@ -170,7 +186,16 @@ export function AiResourcePage({ section }: { section: Section }) {
               </p>
             </div>
             <Button asChild variant="secondary">
-              <Link href="/ai-job-risk-checker/">Start the checker</Link>
+              <TrackedLink
+                href="/ai-job-risk-checker/"
+                eventContext={{
+                  source: section.pageKey as string,
+                  label: 'Start the checker',
+                  destination: '/ai-job-risk-checker/',
+                }}
+              >
+                Start the checker
+              </TrackedLink>
             </Button>
           </div>
         </div>

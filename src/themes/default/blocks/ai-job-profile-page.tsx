@@ -1,8 +1,8 @@
 import { ArrowRight } from 'lucide-react';
 
-import { Link } from '@/core/i18n/navigation';
 import { getOccupationBySlug } from '@/shared/lib/ai-site-content';
 import { getRiskLevel } from '@/shared/lib/ai-job-risk';
+import { TrackedLink } from '@/shared/components/analytics/tracked-link';
 import { Button } from '@/shared/components/ui/button';
 import type { Section } from '@/shared/types/blocks/landing';
 
@@ -48,10 +48,18 @@ export function AiJobProfilePage({ section }: { section: Section }) {
               digital or in-person.
             </p>
             <Button asChild className="mt-5 w-full">
-              <Link href="/ai-job-risk-checker/">
+              <TrackedLink
+                href="/ai-job-risk-checker/"
+                eventContext={{
+                  source: `job:${profile.slug}`,
+                  label: 'Check my job risk',
+                  destination: '/ai-job-risk-checker/',
+                  risk_level: riskLevel,
+                }}
+              >
                 Check my job risk
                 <ArrowRight className="size-4" />
-              </Link>
+              </TrackedLink>
             </Button>
           </div>
 
@@ -104,7 +112,16 @@ export function AiJobProfilePage({ section }: { section: Section }) {
               {related.map((item) =>
                 item ? (
                   <Button key={item.slug} asChild variant="outline">
-                    <Link href={`/jobs/${item.slug}/`}>{item.title}</Link>
+                    <TrackedLink
+                      href={`/jobs/${item.slug}/`}
+                      eventContext={{
+                        source: `job:${profile.slug}`,
+                        label: item.title,
+                        destination: `/jobs/${item.slug}/`,
+                      }}
+                    >
+                      {item.title}
+                    </TrackedLink>
                   </Button>
                 ) : null
               )}

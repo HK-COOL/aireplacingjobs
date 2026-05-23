@@ -39,6 +39,7 @@ const robots = read('src/app/robots.ts');
 const packageJson = read('package.json');
 const checker = read('src/themes/default/blocks/ai-job-risk-checker.tsx');
 const analyticsService = read('src/shared/services/analytics.ts');
+const trackedLink = read('src/shared/components/analytics/tracked-link.tsx');
 const envExample = read('.env.example');
 const localePaths = [
   'showcases',
@@ -104,6 +105,11 @@ assert(
     checker.includes("track('tool_copy_result'") &&
     checker.includes("track('tool_apply_preset'"),
   'Checker should track core tool actions for post-launch measurement'
+);
+assert(
+  trackedLink.includes("eventName = 'longtail_cta_click'") &&
+    trackedLink.includes('@vercel/analytics'),
+  'TrackedLink should track long-tail CTA clicks'
 );
 assert(
   !checker.includes('jobTitle') || !checker.includes('job_title:'),
