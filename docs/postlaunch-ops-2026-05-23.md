@@ -26,8 +26,8 @@ Updated: 2026-05-23
 
 ## Still Needs Provider Console Work
 
-- Google Search Console: add/confirm the domain property and submit `https://aireplacingjobs.org/sitemap.xml`.
-- Bing Webmaster: add/confirm the site and submit or resubmit `https://aireplacingjobs.org/sitemap.xml`.
+- Google Search Console: click Verify for `https://www.aireplacingjobs.org/` using the already-live HTML file or meta tag, then submit `https://aireplacingjobs.org/sitemap.xml`.
+- Bing Webmaster: sign in with a Microsoft account, add/import the site, and submit or resubmit `https://aireplacingjobs.org/sitemap.xml`.
 - Vercel Analytics: after manual tool interactions, confirm the first custom events appear.
 
 ## First Growth Hypothesis
