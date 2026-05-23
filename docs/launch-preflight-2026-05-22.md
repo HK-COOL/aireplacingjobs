@@ -71,4 +71,5 @@ Remaining SOP tasks:
 - Re-check live HTML, robots, sitemap, canonical URLs, favicon, touch icon, and preview image from the custom domain after the latest deploy.
 - Submit sitemap to IndexNow, Google Search Console, and Bing Webmaster.
 - Confirm Vercel Analytics receives `tool_check_risk`, `tool_apply_preset`, and `tool_copy_result` events.
+- Submit the 17 public sitemap URLs through IndexNow after the key file is live.
 - Record the first re-check date and Stage 2 growth hypothesis before adding more pages or monetization.

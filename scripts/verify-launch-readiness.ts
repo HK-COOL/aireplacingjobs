@@ -56,13 +56,20 @@ for (const asset of [
   'icon.png',
   'apple-touch-icon.png',
   'preview.png',
+  'aijobs20260523indexnow35a02c0d.txt',
 ]) {
   const file = path.join(root, 'public', asset);
-  assert(fs.statSync(file).size > 1000, `Brand asset is missing or too small: ${asset}`);
+  const stat = fs.statSync(file);
+  if (asset.endsWith('.txt')) {
+    assert(stat.size > 8, `IndexNow key file is missing or too small: ${asset}`);
+  } else {
+    assert(stat.size > 1000, `Brand asset is missing or too small: ${asset}`);
+  }
 }
 
 assert(!exists('public/robots.txt'), 'Do not add public/robots.txt when src/app/robots.ts serves robots');
 assert(!exists('src/app/api'), 'src/app/api should stay removed for public v1 launch');
+assert(exists('scripts/submit-indexnow.ts'), 'IndexNow submission script should exist');
 assert(!packageJson.toLowerCase().includes('shipany'), 'package.json still has template metadata');
 
 for (const envFile of [envProduction, envExample]) {

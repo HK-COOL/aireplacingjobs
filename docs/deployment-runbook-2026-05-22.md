@@ -81,7 +81,13 @@ $env:VERCEL='1'; $env:NEXT_TELEMETRY_DISABLED='1'; pnpm exec next build --webpac
 
 After production cutover:
 
+- Verify `https://aireplacingjobs.org/aijobs20260523indexnow35a02c0d.txt` returns the IndexNow key.
+- Submit IndexNow from the repo:
+
+```powershell
+pnpm exec tsx scripts/submit-indexnow.ts
+```
+
 - Submit `https://aireplacingjobs.org/sitemap.xml` to Google Search Console.
 - Submit `https://aireplacingjobs.org/sitemap.xml` to Bing Webmaster.
-- Submit changed URLs through IndexNow if credentials are available.
 - Record provider lag as status, not failure.
