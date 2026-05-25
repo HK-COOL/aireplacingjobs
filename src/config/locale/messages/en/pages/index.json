@@ -82,10 +82,17 @@
         "className": "bg-muted"
       },
       "safer": {
-        "block": "features",
+        "block": "features-list",
         "id": "safer",
-        "title": "Jobs Less Likely to Be Fully Replaced",
+        "title": "What Jobs Are Safe From AI?",
         "description": "Roles are generally more resilient when they depend on physical presence, human trust, care, emergency response, leadership, or accountability.",
+        "buttons": [
+          {
+            "title": "See jobs safe from AI",
+            "url": "/jobs-safe-from-ai/",
+            "icon": "ShieldCheck"
+          }
+        ],
         "items": [
           {
             "title": "Hands-on work",
@@ -114,6 +121,12 @@
             "title": "Read the statistics guide",
             "url": "/ai-replacing-jobs-statistics/",
             "icon": "BarChart3"
+          },
+          {
+            "title": "Anthropic forecast guide",
+            "url": "/anthropic-ai-job-loss-forecast/",
+            "icon": "ArrowRight",
+            "variant": "outline"
           }
         ],
         "items": [
@@ -160,7 +173,7 @@
           },
           {
             "title": "Turn the score into action",
-          "description": "The result includes exposed tasks, protected tasks, skills to learn, and a 90-day plan."
+            "description": "The result includes exposed tasks, protected tasks, skills to learn, and a 90-day plan."
           }
         ]
       },
